@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*Tipografia POPPINS*/
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-regular.ttf);
+}
+/*-------------------------- RESETEO DE HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------------- ESTILOS PARA BODY */
+#body {
+  background-color: #1E1E1E;
+  font-family: "poppins", sans-serif;
+  max-width: 100%;
+  letter-spacing: 3px;
+  color: white;
+  font-weight: regular;
+}
+
+/* Estilos de Header */
+#header {
+  width: 100%;
+  height: 50px;
+  position: static;
+  background-color: #BE4729;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+}
+
+#container .profile-picture {
+  display: block;
+  margin: 5% auto;
+  height: auto;
+  max-width: 200px;
+  border-radius: 50%;
+}
+#container .links {
+  background-color: #BE4729;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  width: 500px;
+  height: 60px;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  font-size: 25px;
+  box-shadow: 4px 4px 10px #080808;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+#container .links .icon-container {
+  background-color: #F0F0D9; /* Fondo gris oscuro */
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Tamaño fijo para los iconos */
+  height: 60px;
+  border-radius: 7px;
+}
+#container .links .icon-container i {
+  font-size: 35px;
+  color: #BE4729;
+  text-align: center;
+}
+#container .links a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #F0F0D9;
+  font-weight: bold;
+  padding: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+}
+#container .links a span {
+  flex: 1;
+  padding-left: 50px;
+}
+
+/* Efecto hover */
+.links:hover {
+  transform: scale(1.05);
+}
+
+.links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
